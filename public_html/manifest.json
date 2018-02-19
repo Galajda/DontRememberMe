@@ -11,14 +11,13 @@
     "permissions": [
         "activeTab",
         "tabs",
-        "storage",
-        "*://hclib.bibliocommons.com/*",
+        "*://*.bibliocommons.com/*",
         "*://*.hclib.org/*"
     ],    
     "content_scripts": [        
         {
             "matches": [
-                "https://hclib.bibliocommons.com/user/login*"
+                "https://*.bibliocommons.com/user/login*"
             ],
             
             "js" : [
