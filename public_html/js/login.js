@@ -16,7 +16,7 @@ for (i=0; i < lblColl.length; i++) {
         theLbl = lblColl[i];
 //        theLbl.htmlFor = '';
         theLbl.innerText = 'Remember me is disabled to protect your privacy';
-        theLbl.style = 'color: red; cursor: arrow';
+        theLbl.style = 'color: red; cursor: default';
 //        lblColl[i].innerText = 'Remember me is disabled to protect your privacy';
 
 //        lblColl[i].style = 'color: red';
