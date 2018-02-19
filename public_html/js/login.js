@@ -12,9 +12,14 @@ chkBox.disabled = true;
 var lblColl = document.getElementsByTagName('label');
 for (i=0; i < lblColl.length; i++) {
     if (lblColl[i].innerText.startsWith('Remember me')) {
-        lblColl[i].innerText = 'Remember me is disabled to protect your privacy';
-//        lblColl[i].setAttr('for', '');
-        lblColl[i].style = 'color: red';
+//        theLbl = new HTMLLabelElement();
+        theLbl = lblColl[i];
+//        theLbl.htmlFor = '';
+        theLbl.innerText = 'Remember me is disabled to protect your privacy';
+        theLbl.style = 'color: red';
+//        lblColl[i].innerText = 'Remember me is disabled to protect your privacy';
+
+//        lblColl[i].style = 'color: red';
         
     }
 }
