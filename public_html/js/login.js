@@ -28,6 +28,6 @@ for (i=0; i < lblColl.length; i++) {
 //        theLbl.htmlFor = '';
         theLbl.innerText = 'Remember me is disabled to protect your privacy';
         theLbl.style = 'color: red; cursor: default';
-
+        //alternatively hide it entirely: theLbl.style = 'display: none;';
     }
 }
