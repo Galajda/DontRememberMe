@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Bibliocommons remember me blocker",
+    "description": "Disables the Remember Me check box on the login screen",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Open the popup"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "*://hclib.bibliocommons.com/*",
+        "*://*.hclib.org/*"
+    ],    
+    "content_scripts": [        
+        {
+            "matches": [
+                "https://hclib.bibliocommons.com/user/login*"
+            ],
+            
+            "js" : [
+                "js/login.js"
+            ]
+        }
+        
+    ]
+    
+}
