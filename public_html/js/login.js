@@ -15,19 +15,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
+//disable the checkbox
 var chkBoxColl = document.getElementsByName('remember_me');
-var chkBox = chkBoxColl[0];
+var chkBox = chkBoxColl[0]; //assumption: there is only one element
 chkBox.disabled = true;
 
+//alter the associated label
 var lblColl = document.getElementsByTagName('label');
 for (i=0; i < lblColl.length; i++) {
     if (lblColl[i].innerText.startsWith('Remember me')) {
-//        theLbl = new HTMLLabelElement();
         theLbl = lblColl[i];
-//        theLbl.htmlFor = '';
         theLbl.innerText = 'Remember me is disabled to protect your privacy';
         theLbl.style = 'color: red; cursor: default';
-        //alternatively hide it entirely: theLbl.style = 'display: none;';
+        //alternatively hide it entirely: theLbl.style = 'display: none';
     }
 }
